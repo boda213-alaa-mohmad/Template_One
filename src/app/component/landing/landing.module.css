@@ -1,0 +1,31 @@
+.landing {
+  background-image: url("https://www.w3schools.com/w3images/ocean2.jpg");
+  background-repeat: no-repeat;
+  height: calc(100vh - 70px);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: -1;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  max-width: 100%;
+}
+
+.container h2 {
+  text-align: center;
+  font-size: 3.5em;
+  color: var(--main-color);
+}
+
+.container p {
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 8px;
+  text-align: center;
+}
