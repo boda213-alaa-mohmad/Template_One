@@ -2,6 +2,10 @@
 
 :root {
   --main-color: #10cab7;
+  --gray-background: #f6f6f6;
+  --title-section: #ebeced;
+  --paragraph-section: #797979;
+  --main-padding: 60px;
 }
 
 html {
