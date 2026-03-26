@@ -1,6 +1,9 @@
+import About from "./component/about/about";
 import Cards from "./component/features/features";
 import Header from "./component/header/header";
 import Landing from "./component/landing/landing";
+import Portfolio from "./component/portfolio/portfolio";
+import Contact from './component/contact/contact'
 
 export default function Home() {
   return (
@@ -8,6 +11,9 @@ export default function Home() {
       <Header />
       <Landing />
       <Cards />
+      <Portfolio />
+      <About />
+      <Contact />
     </div>
   );
 }
