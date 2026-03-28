@@ -1,0 +1,14 @@
+.footer {
+    padding: 30px;
+    color: white;
+    background: #2c4755;
+    text-align: center;
+}
+
+.footer div {
+    font-size: 1.5em;
+}
+
+.span {
+    color: var(--main-color);
+}
