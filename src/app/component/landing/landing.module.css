@@ -21,6 +21,7 @@
   text-align: center;
   font-size: 3.5em;
   color: var(--main-color);
+  animation: fadeInUp 0.8s ease-out 0.4s both;
 }
 
 .container p {
@@ -28,4 +29,16 @@
   text-align: center;
   margin-top: 8px;
   text-align: center;
+  animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
