@@ -14,7 +14,49 @@
   padding: 15px;
 }
 
+.navbar {
+  display: flex;
+  gap: 20px;
+  font-size: 1.2em;
+}
+
+.navbar li {
+  list-style-type: none;
+  padding: 8px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  position: relative;
+}
+
+.navbar a:hover {
+  color: var(--main-color);
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--main-color);
+  transition: 0.3s ease;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+.btn {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
 .burger-menu {
+  display: none;
   position: relative;
   cursor: pointer;
 }
@@ -42,30 +84,37 @@ div.middle {
   margin-top: 15px;
 }
 
-.burger-menu:hover .menu {
+.burger-menu .menu {
   display: block;
+}
+
+.burger-menu .hide {
+  display: none;
 }
 
 .menu li {
   width: 200px;
   background: #f6f6f6;
-  color: #7f807f;
   list-style-type: none;
   font-size: 1.3em;
-  font-weight: 100;
+  font-weight: 400;
   padding: 10px;
   margin-bottom: 3px;
   border-bottom: 1px solid #dddddd;
-  transition: padding-left ease 0.5s;
   cursor: pointer;
 }
 
 .burger-menu a {
+  width: 100%;
+  color: #7f807f;
+  display: block;
+  transition: padding-left ease 0.5s;
   text-decoration: none;
 }
 
-.menu li:hover {
+.menu a:hover {
   padding-left: 18px;
+  color: var(--main-color);
 }
 
 .up-arrow {
@@ -76,4 +125,18 @@ div.middle {
   border-width: 20px;
   border-color: transparent transparent #f6f6f6 transparent;
   border-style: solid;
+}
+
+@media (max-width: 767px) {
+  .burger-menu {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .header-container {
+    padding: 17.2px;
+  }
 }
