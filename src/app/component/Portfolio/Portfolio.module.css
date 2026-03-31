@@ -1,0 +1,52 @@
+.portfolio {
+  background: var(--gray-background);
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+}
+
+.portfolio h2 {
+  color: var(--title-section);
+  text-align: center;
+  font-size: 4.5em;
+}
+
+.portfolio > p {
+  margin-top: -20px;
+  text-align: center;
+  font-weight: 300;
+  color: var(--parargraph-section);
+}
+
+.card-container {
+  width: 80%;
+  max-width: 1200px;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+}
+
+.card {
+  background: #ffffff;
+}
+
+.img {
+  width: 100%;
+}
+
+.info {
+  padding: 20px;
+}
+
+.info > h4 {
+  font-size: 1.6em;
+  margin-bottom: 8px;
+}
+
+.info > p {
+  color: #777;
+  line-height: 1.6;
+  font-size: 1.3em;
+}
